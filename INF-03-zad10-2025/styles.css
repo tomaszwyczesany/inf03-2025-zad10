@@ -1,0 +1,65 @@
+
+/* Ustawienia domyślne dla wszystkich selektorów */
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+/* Styl dla nagłówka i stopki */
+header, footer {
+    background-color: #FFD966;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 5px 5px 10px black;
+}
+
+/* Dodatkowe style dla stopki */
+footer {
+    font-size: 120%;
+}
+
+/* Styl dla bloku lewego */
+.left-block {
+    background-color: #FFD966;
+    width: 25%;
+    height: 450px;
+    float: left;
+}
+
+/* Styl dla bloku prawego */
+.right-block {
+    background-color: #C5E0B4;
+    width: 75%;
+    height: 450px;
+    text-align: center;
+    box-shadow: inset 0 0 15px black;
+    float: left;
+}
+
+/* Styl dla tabeli i jej elementów */
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/* Styl dla tabeli */
+table {
+    margin: auto;
+    width: 70%;
+}
+
+/* Styl dla listy punktowanej */
+ul {
+    list-style-type: square;
+    line-height: 1.5;
+}
+
+/* Styl dla odnośników */
+a {
+    color: SeaGreen;
+}
+
+/* Styl dla nagłówków h4 */
+h4 {
+    color: SeaGreen;
+}
