@@ -16,10 +16,11 @@ header, footer {
 /* Dodatkowe style dla stopki */
 footer {
     font-size: 120%;
+	clear: both;
 }
 
 /* Styl dla bloku lewego */
-.left-block {
+#left-block {
     background-color: #FFD966;
     width: 25%;
     height: 450px;
@@ -27,7 +28,7 @@ footer {
 }
 
 /* Styl dla bloku prawego */
-.right-block {
+#right-block {
     background-color: #C5E0B4;
     width: 75%;
     height: 450px;
