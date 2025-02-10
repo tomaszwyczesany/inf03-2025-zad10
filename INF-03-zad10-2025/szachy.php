@@ -42,13 +42,11 @@
                                 $position = 1;
                     
                                 if(mysqli_num_rows($wynik)>0) {
-                                    echo "<table>";
-                                    echo "<tr><th>Pozycja</th><th>Pseudonim</th><th>Tytuł</th><th>Ranking</th><th>Klasa</th></tr>";
                                     while($row=mysqli_fetch_row($wynik)) {
                                         echo"<tr><td>$position</td><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td><td>$row[3]</td></tr>";
                                         $position++;
                                     }
-                                    echo "</table>";
+                                    
                                 }
                                 mysqli_close($conn);
                             ?>
@@ -59,7 +57,6 @@
 					<?php
 						if (isset($_POST["submit"]))
 						{
-							//echo"<div>test</div>";
 							$conn=mysqli_connect('localhost', 'root', '', 'szachy');
 							$zapytanie="SELECT pseudonim, klasa FROM zawodnicy ORDER BY RAND() LIMIT 2;";
 							$wynik=mysqli_query($conn,$zapytanie);
